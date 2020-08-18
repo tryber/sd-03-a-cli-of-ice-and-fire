@@ -5,13 +5,13 @@ const cli = require('../lib/cli');
 
 const houseMenu = require('../lib/menus/houses');
 const actionsActionHouse = require('../lib/menus/houses/actions/list');
-const housesFixture = require('../test/fixtures/houses');
+const housesFixture = require('./fixtures/houses');
 
 jest.mock('inquirer');
 jest.mock('superagent');
 
 function getSuperagentMock(response) {
-    superagent.get.mockResolvedValue(response);
+  superagent.get.mockResolvedValue(response);
 }
 
 describe('Validar o menu Houses', () => {
@@ -44,17 +44,17 @@ describe('Validar o menu Houses', () => {
     test('Verificar a opção "Próxima página"', async () => {
       getSuperagentMock(housesFixture.responses.hasNext);
       superagent.get.mockResolvedValueOnce(housesFixture.responses.hasNext)
-          .mockResolvedValueOnce(housesFixture.responses.hasPrevious);
+        .mockResolvedValueOnce(housesFixture.responses.hasPrevious);
 
       inquirer.prompt.mockImplementationOnce((questions) => {
-          const question = Array.isArray(questions) ? questions[0] : questions;
-          return Promise.resolve({ [question.name]: question.choices[0].value })
+        const question = Array.isArray(questions) ? questions[0] : questions;
+        return Promise.resolve({ [question.name]: question.choices[0].value });
       }).mockImplementationOnce((questions) => {
-          const question = Array.isArray(questions) ? questions[0] : questions;
-          return Promise.resolve({ [question.name]: 'back' })
+        const question = Array.isArray(questions) ? questions[0] : questions;
+        return Promise.resolve({ [question.name]: 'back' });
       }).mockImplementationOnce((questions) => {
-          const question = Array.isArray(questions) ? questions[0] : questions;
-          return Promise.resolve({ [question.name]: 'prev' })
+        const question = Array.isArray(questions) ? questions[0] : questions;
+        return Promise.resolve({ [question.name]: 'prev' });
       });
 
       await actionsActionHouse.run(jest.fn());
@@ -66,17 +66,17 @@ describe('Validar o menu Houses', () => {
     test('Verificar a opção "Página anterior" quando vou para próxima página', async () => {
       getSuperagentMock(housesFixture.responses.hasNext);
       superagent.get.mockResolvedValueOnce(housesFixture.responses.hasNext)
-          .mockResolvedValueOnce(housesFixture.responses.hasPrevious);
+        .mockResolvedValueOnce(housesFixture.responses.hasPrevious);
 
       inquirer.prompt.mockImplementationOnce((questions) => {
-          const question = Array.isArray(questions) ? questions[0] : questions;
-          return Promise.resolve({ [question.name]: question.choices[0].value })
+        const question = Array.isArray(questions) ? questions[0] : questions;
+        return Promise.resolve({ [question.name]: question.choices[0].value });
       }).mockImplementationOnce((questions) => {
-          const question = Array.isArray(questions) ? questions[0] : questions;
-          return Promise.resolve({ [question.name]: 'back' })
+        const question = Array.isArray(questions) ? questions[0] : questions;
+        return Promise.resolve({ [question.name]: 'back' });
       }).mockImplementationOnce((questions) => {
-          const question = Array.isArray(questions) ? questions[0] : questions;
-          return Promise.resolve({ [question.name]: 'back' })
+        const question = Array.isArray(questions) ? questions[0] : questions;
+        return Promise.resolve({ [question.name]: 'back' });
       });
 
       await actionsActionHouse.run(jest.fn());
