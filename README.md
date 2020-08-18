@@ -73,7 +73,7 @@ O código deste repositório possui a funcionalidade de listar as personagens, e
 
 ## Requisitos do projeto
 
-### 💡Veja o exemplo a seguir de como o projeto pode se parecer depois de pronto.
+### 💡Veja o exemplo a seguir de como o projeto pode se parecer depois de pronto. Lembre-se que você pode ~~e deve~~ ir além para deixar o projeto com a sua cara e impressionar à todos!
 
 ![exemplo do resultado](./public/funcionamento_do_projeto.gif)
 
