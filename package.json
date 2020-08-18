@@ -19,7 +19,7 @@
     "thrones",
     "api"
   ],
-  "author": "",
+  "author": "William Igor",
   "license": "GPL-3.0",
   "devDependencies": {
     "@types/jest": "25.1.4",
