@@ -72,7 +72,7 @@ describe('Validar o menu livros', () => {
     });
   });
 
-  describe.skip('Caso nada seja digitado no momento da pesquisa, exiba todos os livros, paginados de 10 em 10', () => {
+  describe('Caso nada seja digitado no momento da pesquisa, exiba todos os livros, paginados de 10 em 10', () => {
     let choices = [];
 
     beforeEach(async () => {
@@ -106,7 +106,7 @@ describe('Validar o menu livros', () => {
     });
   });
 
-  describe.skip('Apresentar as opções \'Próxima página\' e \'Página anterior\' caso existam mais de 10 resultados', () => {
+  describe('Apresentar as opções \'Próxima página\' e \'Página anterior\' caso existam mais de 10 resultados', () => {
     let firstPage = [];
     let secondPage = [];
 
@@ -145,7 +145,7 @@ describe('Validar o menu livros', () => {
     });
   });
 
-  describe.skip('Quando um livro for selecionado, exibir na tela as propriedades daquele livro', () => {
+  describe('Quando um livro for selecionado, exibir na tela as propriedades daquele livro', () => {
     let bookData = [];
 
     beforeEach(async () => {
@@ -185,7 +185,7 @@ describe('Validar o menu livros', () => {
     });
   });
 
-  describe.skip('Sempre exibir uma opção de voltar', () => {
+  describe('Sempre exibir uma opção de voltar', () => {
     let choicesMenu = [];
     beforeEach(() => {
       jest.clearAllMocks();
@@ -246,7 +246,7 @@ describe('Validar o menu livros', () => {
     });
   });
 
-  describe.skip('Caso nenhum resultado for encontrado, exibir uma mensagem e voltar ao menu de livros', () => {
+  describe('Caso nenhum resultado for encontrado, exibir uma mensagem e voltar ao menu de livros', () => {
     beforeEach(() => {
       jest.clearAllMocks();
       console.log = jest.fn();
