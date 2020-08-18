@@ -71,10 +71,6 @@ O CLI mostra informações sobre o mundo de Game of Thrones utilizando, como fon
 
 O código deste repositório possui a funcionalidade de listar as personagens, e exibir os detalhes sobre uma personagem selecionada. Além de refatorar o código já existente, você deverá adicionar a funcionalidade de buscar livros pelo nome, exibir os resultados, e mostrar os detalhes do livro selecionado.
 
-### Data de Entrega
-
-O projeto tem até a seguinte data: `DD/MM/YYYY - 14:00h`. Para ser entregue a avaliação final.
-
 ## Requisitos do projeto
 
 ### 💡Veja o exemplo a seguir de como o projeto pode se parecer depois de pronto. Lembre-se que você pode ~~e deve~~ ir além para deixar o projeto com a sua cara e impressionar à todos!
@@ -223,7 +219,7 @@ Você precisará ler o conteúdo do header `link`, retornado pela API quando uti
 
 - [**Verificar a presença da opção "Página anterior" quando vou para a próxima página na lista de livros**]
 
-### 5 - Quando o um livro for selecionado, exibir na tela as propriedades daquele livro
+### 5 - Quando um livro for selecionado, exibir na tela as propriedades daquele livro
 
 **Atenção:** As propriedades `characters` e `povCharacters` não deverão ser exibidas.
 
