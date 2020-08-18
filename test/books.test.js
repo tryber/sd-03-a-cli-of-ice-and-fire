@@ -13,7 +13,8 @@ function getSuperagentMock(response) {
   superagent.get.mockResolvedValue(response);
 }
 
-  describe("1 - Exibir, no menu inicial, o sub-menu 'livros' e, dentro dele, uma opção 'Pesquisar livros'", () => {
+describe('Validar o menu livros', () => {
+  describe('1 - Exibir, no menu inicial, o sub-menu \'livros\' e, dentro dele, uma opção \'Pesquisar livros\'', () => {
     let choicesMenu = [];
 
     beforeEach(() => {
@@ -39,7 +40,7 @@ function getSuperagentMock(response) {
     });
   });
 
-  describe("2 - Utilizando o nome inserido, realizar uma requisição para o endpoint /books da API, com o parâmetro ?name contendo o nome digitado pelo usuário e apresentar os resultados para o usuário numa lista", () => {
+  describe('2 - Utilizando o nome inserido, realizar uma requisição para o endpoint /books da API, com o parâmetro ?name contendo o nome digitado pelo usuário e apresentar os resultados para o usuário numa lista', () => {
     let choices = [];
 
     beforeEach(async () => {
@@ -71,7 +72,7 @@ function getSuperagentMock(response) {
     });
   });
 
-  describe("3 - Caso nada seja digitado no momento da pesquisa, exiba todos os livros, paginados de 10 em 10", () => {
+  describe('3 - Caso nada seja digitado no momento da pesquisa, exiba todos os livros, paginados de 10 em 10', () => {
     let choices = [];
 
     beforeEach(async () => {
@@ -104,8 +105,8 @@ function getSuperagentMock(response) {
       });
     });
   });
-    
-  describe("4 - Apresentar as opções 'Próxima página' e 'Página anterior' caso existam mais de 10 resultados", () => {
+
+  describe('4 - Apresentar as opções \'Próxima página\' e \'Página anterior\' caso existam mais de 10 resultados', () => {
     let firstPage = [];
     let secondPage = [];
 
@@ -144,7 +145,7 @@ function getSuperagentMock(response) {
     });
   });
 
-  describe("5 - Quando um livro for selecionado, exibir na tela as propriedades daquele livro", () => {
+  describe('5 - Quando um livro for selecionado, exibir na tela as propriedades daquele livro', () => {
     let bookData = [];
 
     beforeEach(async () => {
@@ -184,7 +185,7 @@ function getSuperagentMock(response) {
     });
   });
 
-  describe("6 - Sempre exibir uma opção de voltar", () => {
+  describe('6 - Sempre exibir uma opção de voltar', () => {
     let choicesMenu = [];
     beforeEach(() => {
       jest.clearAllMocks();
@@ -245,7 +246,7 @@ function getSuperagentMock(response) {
     });
   });
 
- describe("7 - Caso nenhum resultado for encontrado, exibir uma mensagem e voltar ao menu de livros", () => {
+  describe('7 - Caso nenhum resultado for encontrado, exibir uma mensagem e voltar ao menu de livros', () => {
     beforeEach(() => {
       jest.clearAllMocks();
       console.log = jest.fn();
