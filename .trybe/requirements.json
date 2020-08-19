@@ -1,35 +1,35 @@
 {
   "requirements": [
     {
-      "description": "Exibir, no menu inicial, o sub-menu 'livros' e, dentro dele, uma opção 'Pesquisar livros'",
+      "description": "1 - Exibir, no menu inicial, o sub-menu 'livros' e, dentro dele, uma opção 'Pesquisar livros'",
       "bonus": false
     },
     {
-      "description": "Utilizando o nome inserido, realizar uma requisição para o endpoint /books da API, com o parâmetro ?name contendo o nome digitado pelo usuário e apresentar os resultados para o usuário numa lista",
+      "description": "2 - Utilizando o nome inserido, realizar uma requisição para o endpoint /books da API, com o parâmetro ?name contendo o nome digitado pelo usuário e apresentar os resultados para o usuário numa lista",
       "bonus": false
     },
     {
-      "description": "Caso nada seja digitado no momento da pesquisa, exiba todos os livros, paginados de 10 em 10",
+      "description": "3 - Caso nada seja digitado no momento da pesquisa, exiba todos os livros, paginados de 10 em 10",
       "bonus": false
     },
     {
-      "description": "Apresentar as opções 'Próxima página' e 'Página anterior' caso existam mais de 10 resultados",
+      "description": "4 - Apresentar as opções 'Próxima página' e 'Página anterior' caso existam mais de 10 resultados",
       "bonus": false
     },
     {
-      "description": "Quando um livro for selecionado, exibir na tela as propriedades daquele livro",
+      "description": "5 - Quando um livro for selecionado, exibir na tela as propriedades daquele livro",
       "bonus": false
     },
     {
-      "description": "Sempre exibir uma opção de voltar",
+      "description": "6 - Sempre exibir uma opção de voltar",
       "bonus": false
     },
     {
-      "description": "Caso nenhum resultado for encontrado, exibir uma mensagem e voltar ao menu de livros",
+      "description": "7 - Caso nenhum resultado for encontrado, exibir uma mensagem e voltar ao menu de livros",
       "bonus": false
     },
     {
-      "description": "Exibir opção de listar as casas do mundo de Game of Thrones",
+      "description": "8 - Exibir opção de listar as casas do mundo de Game of Thrones",
       "bonus": false
     }
   ]
