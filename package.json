@@ -34,7 +34,9 @@
   },
   "dependencies": {
     "inquirer": "7.1.0",
+    "node": "^14.8.0",
     "prettyjson": "^1.2.1",
+    "readline-sync": "^1.4.10",
     "superagent": "5.2.2"
   }
 }
