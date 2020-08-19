@@ -26,6 +26,7 @@ describe('Validar o menu livros', () => {
     });
 
     test('Verifica se a opção livros está no menu inicial', async () => {
+      console.log('test');
       inquirer.prompt.mockResolvedValueOnce({});
       await cli.run({ inquirer });
       choicesMenu = inquirer.prompt.mock.calls[0][0].choices.map(({ name }) => name);
