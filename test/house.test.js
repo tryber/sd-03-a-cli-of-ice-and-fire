@@ -15,7 +15,7 @@ function getSuperagentMock(response) {
 }
 
 describe('Validar o menu Houses', () => {
-  describe('Exibir opção de listar as casas do mundo de Game of Thrones', () => {
+  describe('8 - Exibir opção de listar as casas do mundo de Game of Thrones', () => {
     let choicesMenu = [];
 
     beforeEach(() => {
