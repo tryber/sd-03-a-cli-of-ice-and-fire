@@ -228,7 +228,6 @@ describe('Validar o menu livros', () => {
       getSuperagentMock(booksFixture.responses.hasNext);
       superagent.get.mockResolvedValueOnce(booksFixture.responses.hasNext)
           .mockResolvedValueOnce(booksFixture.responses.hasPrevious);
-
       inquirer.prompt.mockImplementationOnce((questions) => {
           const question = Array.isArray(questions) ? questions[0] : questions;
           return Promise.resolve({ [question.name]: 'A Clash of Kings' })
@@ -239,7 +238,6 @@ describe('Validar o menu livros', () => {
           const question = Array.isArray(questions) ? questions[0] : questions;
           return Promise.resolve({ [question.name]: 'back' })
       });
-
       await listActionBooks.run(jest.fn());
       choicesMenu = inquirer.prompt.mock.calls[1][0].choices.map(({ name }) => name).filter(Boolean);
       expect(choicesMenu).toContain('Página anterior');
