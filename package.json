@@ -36,5 +36,17 @@
     "inquirer": "7.1.0",
     "prettyjson": "^1.2.1",
     "superagent": "5.2.2"
-  }
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tryber/sd-03-a-cli-of-ice-and-fire.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tryber/sd-03-a-cli-of-ice-and-fire/issues"
+  },
+  "homepage": "https://github.com/tryber/sd-03-a-cli-of-ice-and-fire#readme"
 }
